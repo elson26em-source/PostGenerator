@@ -46,7 +46,7 @@
 
 <script>
   // Replace the placeholder below with your n8n PRODUCTION webhook URL.
-  const WEBHOOK_URL = "PUT_YOUR_N8N_WEBHOOK_URL_HERE";
+  const WEBHOOK_URL = "https://elson26.app.n8n.cloud/webhook/64caa301-924b-4d28-a553-d729d05b1a0a";
 
   const $ = (id) => document.getElementById(id);
   const status = $("status");
@@ -56,7 +56,7 @@
   $("form").addEventListener("submit", async (e) => {
     e.preventDefault();
     const url = WEBHOOK_URL;
-    if (url === "PUT_YOUR_N8N_WEBHOOK_URL_HERE") return show("This form isn't connected yet: the webhook URL hasn't been set.", "err");
+    if (url === "https://elson26.app.n8n.cloud/webhook/64caa301-924b-4d28-a553-d729d05b1a0a") return show("This form isn't connected yet: the webhook URL hasn't been set.", "err");
 
     const btn = $("submit");
     btn.disabled = true; btn.textContent = "Working...";
